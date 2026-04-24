@@ -1,0 +1,57 @@
+/**html {
+  --primary: #bada55;
+  --secondary: #5000ca;
+  --tertiary: #;
+}
+
+h1 {
+  color: var(--primary);
+}
+
+html {
+  color-scheme: light, dark;
+  --color-heading: (#5000ca, #e0d3ff);
+  --color-text: (#555, #cdc7dc);
+  --color-bg: (#fff, #222);
+
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+html.dark {
+  color-scheme: dark light;
+  --color-heading: (#e0d3ff, #5000ca);
+  --color-text: (#cdc7dc, #555);
+  --color-bg: light-dark(#222, #fff);
+}
+
+h1 {
+  color: var(--color-heading);
+}**/
+
+html {
+  --primary: light-dark(#a8c7a3, #41613b);
+}
+
+h1 {
+  color: var(--primary);
+}
+
+html {
+  color-scheme: light dark;
+  --color-heading: light-dark(#8e5ea4, #826390);
+  --color-text: light-dark(#bc9cc9, #ac99b4);
+  --color-bg: light-dark(#a8c7a3, #41613b);
+
+  background: var(--color-bg);
+  color: var(--color-brand);
+}
+
+html.light{
+    color-scheme: light;
+}
+html.dark {
+    color-scheme: dark;
+}
+
+/* Colours*/
